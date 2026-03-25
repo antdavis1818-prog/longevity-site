@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +15,8 @@
       --text-dark: #1e2e1e; --text-mid: #4a5a4a; --text-light: #8a9a8a; --border: #ddd8ce;
     }
     html { scroll-behavior: smooth; }
-    body { font-family: 'Jost', sans-serif; background: var(--cream); color: var(--text-dark); font-weight: 300; line-height: 1.7; }nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(250,248,244,0.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+    body { font-family: 'Jost', sans-serif; background: var(--cream); color: var(--text-dark); font-weight: 300; line-height: 1.7; }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(250,248,244,0.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 72px; }
     .nav-brand { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
     .nav-brand img { height: 58px; width: auto; }
     .nav-brand-text { display: none; }
@@ -43,7 +45,8 @@
     section { padding: clamp(4rem, 8vw, 7rem) clamp(2rem, 8vw, 8rem); }
     .section-eyebrow { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--green-mid); font-weight: 500; margin-bottom: 1.2rem; }
     .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.2rem, 4vw, 3.2rem); font-weight: 300; line-height: 1.15; color: var(--green-dark); margin-bottom: 1.2rem; }
-    .section-title em { font-style: italic; color: var(--amber); }#approach { background: var(--cream-dark); }
+    .section-title em { font-style: italic; color: var(--amber); }
+    #approach { background: var(--cream-dark); }
     .approach-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 3rem; }
     .approach-intro { max-width: 500px; color: var(--text-mid); font-size: 1rem; }
     .approach-cards { display: flex; flex-direction: column; gap: 1rem; }
@@ -98,15 +101,18 @@
     .plan-list.not-included li::before { content: '✗'; color: #d08080; }
     .plan-footer { padding: 1.5rem 2rem; background: var(--cream); border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
     .plan-year { font-size: 0.82rem; color: var(--text-light); font-style: italic; }
-    .plan-cta { display: inline-block; text-decoration: none; border: 1.5px solid var(--green-dark); color: var(--green-dark); padding: 0.6rem 1.5rem; border-radius: 2px; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; transition: all 0.2s; }
+    .plan-cta { display: inline-block; text-decoration: none; border: 1.5px solid var(--green-dark); color: var(--green-dark); padding: 0.6rem 1.5rem; border-radius: 2px; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; transition: all 0.2s; margin-right: 0.5rem; }
     .plan-cta:hover { background: var(--green-dark); color: #fff; }
+    .plan-pay { display: inline-block; text-decoration: none; background: var(--amber); color: #fff; padding: 0.6rem 1.5rem; border-radius: 2px; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; transition: all 0.2s; }
+    .plan-pay:hover { background: #b8743a; }
     .addon-card { margin-top: 2rem; border: 1.5px solid var(--border); border-radius: 6px; background: #fff; padding: 2rem; display: grid; grid-template-columns: auto 1fr; gap: 2rem; }
     .addon-price-num { font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 500; color: var(--green-dark); line-height: 1; }
     .addon-price-label { font-size: 0.72rem; color: var(--green-mid); letter-spacing: 0.08em; }
     .addon-body h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--green-dark); margin-bottom: 0.5rem; }
     .addon-desc { font-size: 0.88rem; color: var(--text-mid); margin-bottom: 1rem; }
     .addon-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-    .addon-tag { font-size: 0.78rem; padding: 0.3rem 0.8rem; border: 1px solid var(--border); border-radius: 20px; color: var(--text-mid); }#helping-hands { background: var(--cream); }
+    .addon-tag { font-size: 0.78rem; padding: 0.3rem 0.8rem; border: 1px solid var(--border); border-radius: 20px; color: var(--text-mid); }
+    #helping-hands { background: var(--cream); }
     .hh-intro { max-width: 580px; color: var(--text-mid); margin-bottom: 3rem; }
     .hh-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-bottom: 3rem; }
     .hh-card { background: var(--cream-dark); border-radius: 6px; padding: 1.8rem; border: 1.5px solid var(--border); transition: box-shadow 0.2s, transform 0.2s; }
@@ -145,10 +151,10 @@
     .form-submit { width: 100%; background: var(--green-dark); color: #fff; border: none; padding: 0.9rem; border-radius: 3px; cursor: pointer; font-family: 'Jost', sans-serif; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500; transition: background 0.2s; }
     .form-submit:hover { background: var(--green-mid); }
     .form-note { font-size: 0.78rem; color: var(--text-light); margin-top: 0.8rem; text-align: center; font-style: italic; }
-    .form-success { display: none; text-align: center; padding: 1rem; background: #e8f4ec; color: var(--green-dark); border-radius: 3px; margin-top: 1rem; font-size: 0.88rem; }
+    .form-success { display: none; text-align: center; padding: 1.2rem; background: var(--green-dark); color: #fff; border-radius: 3px; margin-top: 1rem; font-size: 1rem; font-weight: 500; }
     @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
     @media (max-width: 900px) { .approach-grid, .who-grid, .why-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; } .plan-body { grid-template-columns: 1fr; } .addon-card { grid-template-columns: 1fr; } }
-    @media (max-width: 600px) { .hero { padding-left: 1.5rem; padding-right: 1.5rem; } .hero::before { display: none; } section { padding: 3rem 1.5rem; } footer { padding: 2rem 1.5rem; } }
+    @media (max-width: 600px) { .hero { padding-left: 1.5rem; padding-right: 1.5rem; } .hero::before { display: none; } section { padding: 3rem 1.5rem; } }
   </style>
 </head><body>
 <nav>
@@ -210,7 +216,9 @@
       <cite>— How we explain our work to referral partners</cite>
     </div>
   </div>
-</section><section id="about">
+</section>
+
+<section id="about">
   <div class="section-eyebrow">Meet Your Home Steward</div>
   <div class="section-title">Built on a lifetime of <em>caring for others.</em></div>
   <div class="about-grid">
@@ -252,6 +260,7 @@
   <div class="section-title">Choose the level of support <em>that fits your family.</em></div>
   <p class="services-intro">Every plan includes written documentation, vendor coordination, and a dedicated point of contact. A 90-day minimum engagement applies to all monthly plans.</p>
   <div class="plans-stack">
+
     <div class="plan-card">
       <div class="plan-header">
         <div>
@@ -286,7 +295,10 @@
       </div>
       <div class="plan-footer">
         <span class="plan-year">≈ $1,800/year</span>
-        <a href="#contact" class="plan-cta">Get Started</a>
+        <div>
+          <a href="#contact" class="plan-cta">Get Started</a>
+          <a href="https://square.link/u/slk50aXA" target="_blank" class="plan-pay">Pay Now</a>
+        </div>
       </div>
     </div>
 
@@ -326,7 +338,10 @@
       </div>
       <div class="plan-footer">
         <span class="plan-year">≈ $3,000/year</span>
-        <a href="#contact" class="plan-cta">Get Started</a>
+        <div>
+          <a href="#contact" class="plan-cta">Get Started</a>
+          <a href="https://square.link/u/3EW857Ta" target="_blank" class="plan-pay">Pay Now</a>
+        </div>
       </div>
     </div>
 
@@ -365,7 +380,10 @@
       </div>
       <div class="plan-footer">
         <span class="plan-year">≈ $6,000/year</span>
-        <a href="#contact" class="plan-cta">Get Started</a>
+        <div>
+          <a href="#contact" class="plan-cta">Get Started</a>
+          <a href="https://square.link/u/ZPWMtKKC" target="_blank" class="plan-pay">Pay Now</a>
+        </div>
       </div>
     </div>
   </div>
@@ -385,6 +403,9 @@
         <span class="addon-tag">🏘 Rental property management</span>
         <span class="addon-tag">🌙 After-hours site visits — $250/hr</span>
       </div>
+      <div style="margin-top:1.5rem;">
+        <a href="https://square.link/u/KuI0YytV" target="_blank" class="plan-pay">Pay for Home Evaluation</a>
+      </div>
     </div>
   </div>
 </section><section id="helping-hands">
@@ -401,6 +422,9 @@
     <div class="hh-pricing-left">
       <h3>Simple, transparent hourly pricing</h3>
       <p>No contracts required for Helping Hands services. Book as little as one hour at a time. Rates may vary based on location and the nature of the request. Available as a standalone service or as an add-on to any monthly plan.</p>
+      <div style="margin-top:1.5rem;">
+        <a href="https://square.link/u/YoCtnbUq" target="_blank" style="display:inline-block; background:var(--amber); color:#fff; padding:0.75rem 1.8rem; border-radius:2px; text-decoration:none; font-size:0.78rem; letter-spacing:0.12em; text-transform:uppercase; font-weight:500;">Pay for Helping Hands</a>
+      </div>
     </div>
     <div class="hh-price-badge">
       <span class="hh-price-num">$50–$100</span>
@@ -429,7 +453,7 @@
     <p style="font-size:0.82rem; color:var(--text-light); margin-bottom:1.5rem;">The same checklist used on every professional visit</p>
     <a href="#contact" class="btn-primary">Request Free Checklist</a>
   </div>
-</section><section id="contact">
+</section<section id="contact">
   <div class="section-eyebrow">Get In Touch</div>
   <div class="section-title">Let's talk about <em>your family's needs.</em></div>
   <p style="color:var(--text-mid); max-width:500px;">We offer a free confidential consultation to understand your situation and recommend the right level of support. Serving Southern New Hampshire &amp; Massachusetts.</p>
@@ -461,6 +485,13 @@
         <div>
           <div class="contact-label">Website</div>
           <div class="contact-value"><a href="https://longevitypropertyservices.com">LongevityPropertyServices.com</a></div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">💳</div>
+        <div>
+          <div class="contact-label">Pay Online</div>
+          <div class="contact-value"><a href="https://square.link/u/slk50aXA" target="_blank" style="display:inline-block; margin-top:0.5rem; background:var(--amber); color:#fff; padding:0.6rem 1.5rem; border-radius:2px; text-decoration:none; font-size:0.78rem; letter-spacing:0.1em; text-transform:uppercase; font-weight:500;">Pay with Square</a></div>
         </div>
       </div>
     </div>
@@ -497,14 +528,14 @@
           headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
           body: JSON.stringify({ name: fname + ' ' + lname, phone: phone, email: email, interest: interest, message: message })
         }).then(function(r) {
-          if(r.ok) { document.getElementById('form-success').style.display='block'; }
+          if(r.ok) { document.getElementById('form-success').style.display='block'; document.querySelector('.form-submit').style.display='none'; }
           else { alert('Something went wrong. Please email us directly at a.davis@longevitypropertyservices.com'); }
         }).catch(function() {
           alert('Something went wrong. Please email us directly at a.davis@longevitypropertyservices.com');
         });
       ">Send Message</button>
       <p class="form-note">We respond within one business day. All consultations are confidential.</p>
-      <div class="form-success" id="form-success">✓ Thank you! We'll be in touch within one business day.</div>
+      <div class="form-success" id="form-success">✓ Thank you, we received your message and will be in touch within one business day!</div>
     </div>
   </div>
 </section>
@@ -517,7 +548,7 @@
     </div>
     <div style="font-size:0.78rem; opacity:0.6; margin-top:0.5rem;">© 2025 Longevity Property Services · 24 Holbrook Dr, Nashua, NH 03062</div>
   </div>
-  <div style="display:flex; gap:1.5rem;">
+  <div style="display:flex; gap:1.5rem; flex-wrap:wrap;">
     <a href="#approach" style="color:rgba(255,255,255,0.6); text-decoration:none; font-size:0.8rem;">About</a>
     <a href="#services" style="color:rgba(255,255,255,0.6); text-decoration:none; font-size:0.8rem;">Services</a>
     <a href="#contact" style="color:rgba(255,255,255,0.6); text-decoration:none; font-size:0.8rem;">Contact</a>
