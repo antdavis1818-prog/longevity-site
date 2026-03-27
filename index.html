@@ -33,9 +33,9 @@
     .hero-desc { max-width: 480px; font-size: 1.05rem; color: var(--text-mid); margin-bottom: 1.5rem; position: relative; z-index: 1; animation: fadeUp 0.8s 0.2s ease both; }
     .hero-quote { font-family: 'Cormorant Garamond', serif; font-style: italic; color: var(--green-mid); font-size: 1.05rem; margin-bottom: 2.5rem; position: relative; z-index: 1; animation: fadeUp 0.8s 0.3s ease both; }
     .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; position: relative; z-index: 1; animation: fadeUp 0.8s 0.4s ease both; }
-    .btn-primary { background: var(--green-dark); color: #fff; padding: 0.85rem 2rem; border-radius: 2px; text-decoration: none; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500; transition: background 0.2s; cursor: pointer; }
+    .btn-primary { background: var(--green-dark); color: #fff; padding: 0.85rem 2rem; border-radius: 2px; border: none; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500; transition: background 0.2s; cursor: pointer; }
     .btn-primary:hover { background: var(--green-mid); }
-    .btn-outline { border: 1.5px solid var(--green-dark); color: var(--green-dark); padding: 0.85rem 2rem; border-radius: 2px; text-decoration: none; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500; transition: all 0.2s; cursor: pointer; }
+    .btn-outline { border: 1.5px solid var(--green-dark); color: var(--green-dark); background: transparent; padding: 0.85rem 2rem; border-radius: 2px; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500; transition: all 0.2s; cursor: pointer; }
     .btn-outline:hover { background: var(--green-dark); color: #fff; }
     .hero-badges { margin-top: 3.5rem; display: flex; gap: 2.5rem; flex-wrap: wrap; position: relative; z-index: 1; animation: fadeUp 0.8s 0.5s ease both; }
     .badge { text-align: center; }
@@ -100,7 +100,7 @@
     .plan-list.not-included li::before { content: '✗'; color: #d08080; }
     .plan-footer { padding: 1.5rem 2rem; background: var(--cream); border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
     .plan-year { font-size: 0.82rem; color: var(--text-light); font-style: italic; }
-    .plan-cta { display: inline-block; text-decoration: none; border: 1.5px solid var(--green-dark); color: var(--green-dark); padding: 0.6rem 1.5rem; border-radius: 2px; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; transition: all 0.2s; margin-right: 0.5rem; cursor: pointer; }
+    .plan-cta { display: inline-block; text-decoration: none; border: 1.5px solid var(--green-dark); color: var(--green-dark); background: transparent; padding: 0.6rem 1.5rem; border-radius: 2px; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; transition: all 0.2s; margin-right: 0.5rem; cursor: pointer; font-family: 'Jost', sans-serif; }
     .plan-cta:hover { background: var(--green-dark); color: #fff; }
     .plan-pay { display: inline-block; text-decoration: none; background: var(--amber); color: #fff; padding: 0.6rem 1.5rem; border-radius: 2px; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; transition: all 0.2s; }
     .plan-pay:hover { background: #b8743a; }
@@ -157,23 +157,23 @@
   </style>
 </head><body>
 <script>
-function scrollTo(id) {
+function goTo(id) {
   var el = document.getElementById(id);
   if(el) { el.scrollIntoView({behavior: 'smooth'}); }
 }
 </script>
 
 <nav>
-  <a href="#" class="nav-brand">
+  <a href="/" class="nav-brand">
     <img src="logo.png" alt="Longevity Property Services" />
   </a>
   <div class="nav-links">
-    <a onclick="scrollTo('approach')">Approach</a>
-    <a onclick="scrollTo('about')">About</a>
-    <a onclick="scrollTo('services')">Services</a>
-    <a onclick="scrollTo('helping-hands')">Helping Hands</a>
-    <a onclick="scrollTo('contact')">Contact</a>
-    <a onclick="scrollTo('contact')" class="nav-cta">Free Consultation</a>
+    <a onclick="goTo('approach')">Approach</a>
+    <a onclick="goTo('about')">About</a>
+    <a onclick="goTo('services')">Services</a>
+    <a onclick="goTo('helping-hands')">Helping Hands</a>
+    <a onclick="goTo('contact')">Contact</a>
+    <a onclick="goTo('contact')" class="nav-cta">Free Consultation</a>
   </div>
 </nav>
 
@@ -183,8 +183,8 @@ function scrollTo(id) {
   <p class="hero-desc">Longevity Property Services helps aging homeowners remain safe, comfortable, and independent — with compassionate home stewardship that gives families real peace of mind.</p>
   <p class="hero-quote">"We don't just maintain homes — we protect independence."</p>
   <div class="hero-btns">
-    <button onclick="scrollTo('contact')" class="btn-primary">Free Consultation</button>
-    <button onclick="scrollTo('services')" class="btn-outline">View Plans</button>
+    <button onclick="goTo('contact')" class="btn-primary">Free Consultation</button>
+    <button onclick="goTo('services')" class="btn-outline">View Plans</button>
   </div>
   <div class="hero-badges">
     <div class="badge"><span class="badge-num">100%</span><span class="badge-label">Non-medical, non-intrusive</span></div>
@@ -259,12 +259,11 @@ function scrollTo(id) {
     <div class="why-card"><div class="why-check">✓</div><h3>Locally Rooted</h3><p>Deeply rooted in Southern NH and Massachusetts with strong knowledge of local contractors, services, and community resources.</p></div>
     <div class="why-card"><div class="why-check">✓</div><h3>Written Every Visit</h3><p>Every visit produces documentation. No verbal updates. No guessing. A clear record families can share.</p></div>
   </div>
-</section<section id="services">
+</section><section id="services">
   <div class="section-eyebrow">Service Plans</div>
   <div class="section-title">Choose the level of support <em>that fits your family.</em></div>
   <p class="services-intro">Every plan includes written documentation, vendor coordination, and a dedicated point of contact. A 90-day minimum engagement applies to all monthly plans.</p>
   <div class="plans-stack">
-
     <div class="plan-card">
       <div class="plan-header">
         <div>
@@ -300,7 +299,7 @@ function scrollTo(id) {
       <div class="plan-footer">
         <span class="plan-year">≈ $1,800/year</span>
         <div>
-          <button onclick="scrollTo('contact')" class="plan-cta">Get Started</button>
+          <button onclick="goTo('contact')" class="plan-cta">Get Started</button>
           <a href="https://square.link/u/slk50aXA" target="_blank" class="plan-pay">Pay Now</a>
         </div>
       </div>
@@ -343,7 +342,7 @@ function scrollTo(id) {
       <div class="plan-footer">
         <span class="plan-year">≈ $3,000/year</span>
         <div>
-          <button onclick="scrollTo('contact')" class="plan-cta">Get Started</button>
+          <button onclick="goTo('contact')" class="plan-cta">Get Started</button>
           <a href="https://square.link/u/3EW857Ta" target="_blank" class="plan-pay">Pay Now</a>
         </div>
       </div>
@@ -385,7 +384,7 @@ function scrollTo(id) {
       <div class="plan-footer">
         <span class="plan-year">≈ $6,000/year</span>
         <div>
-          <button onclick="scrollTo('contact')" class="plan-cta">Get Started</button>
+          <button onclick="goTo('contact')" class="plan-cta">Get Started</button>
           <a href="https://square.link/u/ZPWMtKKC" target="_blank" class="plan-pay">Pay Now</a>
         </div>
       </div>
@@ -437,7 +436,7 @@ function scrollTo(id) {
       <span class="hh-price-label">per hour</span>
     </div>
   </div>
-</section<section id="checklist">
+</section><section id="checklist">
   <div class="checklist-inner">
     <div class="section-eyebrow">Free Resource</div>
     <div class="section-title">Is your loved one's home <em>truly safe?</em></div>
@@ -455,7 +454,7 @@ function scrollTo(id) {
       <span class="checklist-badge-label">Inspection Points</span>
     </div>
     <p style="font-size:0.82rem; color:var(--text-light); margin-bottom:1.5rem;">The same checklist used on every professional visit</p>
-    <button onclick="scrollTo('contact')" class="btn-primary">Request Free Checklist</button>
+    <button onclick="goTo('contact')" class="btn-primary">Request Free Checklist</button>
   </div>
 </section>
 
@@ -555,10 +554,10 @@ function scrollTo(id) {
     <div style="font-size:0.78rem; opacity:0.6; margin-top:0.5rem;">© 2025 Longevity Property Services · 24 Holbrook Dr, Nashua, NH 03062</div>
   </div>
   <div style="display:flex; gap:1.5rem; flex-wrap:wrap;">
-    <a onclick="scrollTo('approach')" style="color:rgba(255,255,255,0.6); text-decoration:none; font-size:0.8rem; cursor:pointer;">About</a>
-    <a onclick="scrollTo('services')" style="color:rgba(255,255,255,0.6); text-decoration:none; font-size:0.8rem; cursor:pointer;">Services</a>
-    <a onclick="scrollTo('helping-hands')" style="color:rgba(255,255,255,0.6); text-decoration:none; font-size:0.8rem; cursor:pointer;">Helping Hands</a>
-    <a onclick="scrollTo('contact')" style="color:rgba(255,255,255,0.6); text-decoration:none; font-size:0.8rem; cursor:pointer;">Contact</a>
+    <a onclick="goTo('approach')" style="color:rgba(255,255,255,0.6); text-decoration:none; font-size:0.8rem; cursor:pointer;">About</a>
+    <a onclick="goTo('services')" style="color:rgba(255,255,255,0.6); text-decoration:none; font-size:0.8rem; cursor:pointer;">Services</a>
+    <a onclick="goTo('helping-hands')" style="color:rgba(255,255,255,0.6); text-decoration:none; font-size:0.8rem; cursor:pointer;">Helping Hands</a>
+    <a onclick="goTo('contact')" style="color:rgba(255,255,255,0.6); text-decoration:none; font-size:0.8rem; cursor:pointer;">Contact</a>
     <a href="tel:6033210986" style="color:rgba(255,255,255,0.6); text-decoration:none; font-size:0.8rem;">(603) 321-0986</a>
   </div>
 </footer>
