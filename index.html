@@ -177,7 +177,7 @@
   <p class="hero-quote">"We don't just maintain homes — we protect independence."</p>
   <div class="hero-btns">
     <a href="#contact" class="btn-primary">Free Consultation</a>
-    <a href="#services" class="btn-outline">View Plans</a>
+<a href="javascript:void(0)" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">View Plans</a>
   </div>
   <div class="hero-badges">
     <div class="badge"><span class="badge-num">100%</span><span class="badge-label">Non-medical, non-intrusive</span></div>
@@ -556,5 +556,14 @@
   </div>
 </footer>
 
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+  a.addEventListener('click', function(e) {
+    e.preventDefault();
+    var target = document.querySelector(this.getAttribute('href'));
+    if(target) target.scrollIntoView({behavior: 'smooth'});
+  });
+});
+</script>
 </body>
 </html>
