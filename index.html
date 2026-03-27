@@ -58,7 +58,6 @@
     .who-card { background: var(--cream-dark); padding: 2rem; border-radius: 4px; border-top: 3px solid var(--green-light); }
     .who-card-label { font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--green-mid); font-weight: 500; margin-bottom: 1rem; }
     .who-card blockquote { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.05rem; color: var(--text-mid); line-height: 1.6; margin-bottom: 1rem; }
-    .who-card cite { font-size: 0.78rem; color: var(--text-light); font-style: normal; }
     #about { background: var(--cream-dark); }
     .about-grid { display: grid; grid-template-columns: 1fr 1.6fr; gap: 4rem; align-items: center; margin-top: 3rem; }
     .about-photo-wrap { position: relative; }
@@ -185,7 +184,7 @@
     <div class="badge"><span class="badge-num">3</span><span class="badge-label">Flexible plan tiers</span></div>
     <div class="badge"><span class="badge-num">24hr</span><span class="badge-label">Written report turnaround</span></div>
   </div>
-  <p class="hero-tagline">Non-medical · Non-intrusive · Serving Southern NH &amp; MA since 2020</p>
+  <p class="hero-tagline">Non-medical · Non-intrusive · Serving Southern NH &amp; MA</p>
 </section>
 
 <section id="approach">
@@ -208,17 +207,13 @@
     <div class="who-card">
       <div class="who-card-label">For Adult Children &amp; Families</div>
       <blockquote>"We help families who are worried about a parent living alone. Our role is to quietly manage the home and coordinate support so small issues don't turn into emergencies."</blockquote>
-      <cite>— How we explain our work to families</cite>
     </div>
     <div class="who-card">
       <div class="who-card-label">For Attorneys, Advisors &amp; Healthcare Professionals</div>
       <blockquote>"We provide structured home oversight, vendor management, documentation, and clear family communication. We don't replace licensed professionals — we strengthen the system around them."</blockquote>
-      <cite>— How we explain our work to referral partners</cite>
     </div>
   </div>
-</section>
-
-<section id="about">
+</section><section id="about">
   <div class="section-eyebrow">Meet Your Home Steward</div>
   <div class="section-title">Built on a lifetime of <em>caring for others.</em></div>
   <div class="about-grid">
@@ -255,7 +250,7 @@
     <div class="why-card"><div class="why-check">✓</div><h3>Locally Rooted</h3><p>Deeply rooted in Southern NH and Massachusetts with strong knowledge of local contractors, services, and community resources.</p></div>
     <div class="why-card"><div class="why-check">✓</div><h3>Written Every Visit</h3><p>Every visit produces documentation. No verbal updates. No guessing. A clear record families can share.</p></div>
   </div>
-</section><section id="services">
+</section<section id="services">
   <div class="section-eyebrow">Service Plans</div>
   <div class="section-title">Choose the level of support <em>that fits your family.</em></div>
   <p class="services-intro">Every plan includes written documentation, vendor coordination, and a dedicated point of contact. A 90-day minimum engagement applies to all monthly plans.</p>
@@ -388,6 +383,32 @@
     </div>
   </div>
 
+  <!-- HELPING HANDS moved here above Add-Ons -->
+  <div style="margin-top:3rem;">
+    <div class="section-eyebrow">Helping Hands Services</div>
+    <div class="section-title" style="font-size:clamp(3.5rem, 7vw, 5.5rem);">A little extra help, <em>when it matters most.</em></div>
+    <p class="hh-intro">Sometimes the best support isn't about the home itself — it's about the person living in it. Our Helping Hands services offer flexible, friendly assistance for everyday needs that make a real difference in a senior's quality of life.</p>
+    <div class="hh-grid">
+      <div class="hh-card"><div class="hh-icon">🛒</div><h3>Grocery Shopping &amp; Errands</h3><p>We handle grocery runs, pharmacy pickups, and everyday errands so your loved one doesn't have to worry about getting out — or going without.</p></div>
+      <div class="hh-card"><div class="hh-icon">📦</div><h3>Light Moving &amp; Rearranging</h3><p>Need furniture shifted, boxes moved, or a room reorganized for safety and comfort? We handle the heavy lifting so no one gets hurt trying to do it alone.</p></div>
+      <div class="hh-card"><div class="hh-icon">🎲</div><h3>Companionship &amp; Social Visits</h3><p>Sometimes seniors just need good company. We'll sit down for a game of cards, a puzzle, or a friendly conversation — because connection matters as much as care.</p></div>
+      <div class="hh-card"><div class="hh-icon">📱</div><h3>Tech Help</h3><p>Trouble with the TV remote, a smartphone, or a tablet? We patiently walk seniors through their devices so they can stay connected with family and the world.</p></div>
+    </div>
+    <div class="hh-pricing">
+      <div class="hh-pricing-left">
+        <h3>Simple, transparent hourly pricing</h3>
+        <p>No contracts required for Helping Hands services. Book as little as one hour at a time. Rates may vary based on location and the nature of the request. Available as a standalone service or as an add-on to any monthly plan.</p>
+        <div style="margin-top:1.5rem;">
+          <a href="https://square.link/u/YoCtnbUq" target="_blank" style="display:inline-block; background:var(--amber); color:#fff; padding:0.75rem 1.8rem; border-radius:2px; text-decoration:none; font-size:0.78rem; letter-spacing:0.12em; text-transform:uppercase; font-weight:500;">Pay for Helping Hands</a>
+        </div>
+      </div>
+      <div class="hh-price-badge">
+        <span class="hh-price-num">$50–$100</span>
+        <span class="hh-price-label">per hour</span>
+      </div>
+    </div>
+  </div>
+
   <div class="addon-card">
     <div class="addon-price-big">
       <div class="addon-price-num">$149</div>
@@ -408,32 +429,7 @@
       </div>
     </div>
   </div>
-</section><section id="helping-hands">
-  <div class="section-eyebrow">Helping Hands Services</div>
-  <div class="section-title" style="font-size:clamp(3.5rem, 7vw, 5.5rem);">A little extra help, <em>when it matters most.</em></div>
-  <p class="hh-intro">Sometimes the best support isn't about the home itself — it's about the person living in it. Our Helping Hands services offer flexible, friendly assistance for everyday needs that make a real difference in a senior's quality of life.</p>
-  <div class="hh-grid">
-    <div class="hh-card"><div class="hh-icon">🛒</div><h3>Grocery Shopping &amp; Errands</h3><p>We handle grocery runs, pharmacy pickups, and everyday errands so your loved one doesn't have to worry about getting out — or going without.</p></div>
-    <div class="hh-card"><div class="hh-icon">📦</div><h3>Light Moving &amp; Rearranging</h3><p>Need furniture shifted, boxes moved, or a room reorganized for safety and comfort? We handle the heavy lifting so no one gets hurt trying to do it alone.</p></div>
-    <div class="hh-card"><div class="hh-icon">🎲</div><h3>Companionship &amp; Social Visits</h3><p>Sometimes seniors just need good company. We'll sit down for a game of cards, a puzzle, or a friendly conversation — because connection matters as much as care.</p></div>
-    <div class="hh-card"><div class="hh-icon">📱</div><h3>Tech Help</h3><p>Trouble with the TV remote, a smartphone, or a tablet? We patiently walk seniors through their devices so they can stay connected with family and the world.</p></div>
-  </div>
-  <div class="hh-pricing">
-    <div class="hh-pricing-left">
-      <h3>Simple, transparent hourly pricing</h3>
-      <p>No contracts required for Helping Hands services. Book as little as one hour at a time. Rates may vary based on location and the nature of the request. Available as a standalone service or as an add-on to any monthly plan.</p>
-      <div style="margin-top:1.5rem;">
-        <a href="https://square.link/u/YoCtnbUq" target="_blank" style="display:inline-block; background:var(--amber); color:#fff; padding:0.75rem 1.8rem; border-radius:2px; text-decoration:none; font-size:0.78rem; letter-spacing:0.12em; text-transform:uppercase; font-weight:500;">Pay for Helping Hands</a>
-      </div>
-    </div>
-    <div class="hh-price-badge">
-      <span class="hh-price-num">$50–$100</span>
-      <span class="hh-price-label">per hour</span>
-    </div>
-  </div>
-</section>
-
-<section id="checklist">
+</section><section id="checklist">
   <div class="checklist-inner">
     <div class="section-eyebrow">Free Resource</div>
     <div class="section-title">Is your loved one's home <em>truly safe?</em></div>
@@ -453,7 +449,9 @@
     <p style="font-size:0.82rem; color:var(--text-light); margin-bottom:1.5rem;">The same checklist used on every professional visit</p>
     <a href="#contact" class="btn-primary">Request Free Checklist</a>
   </div>
-</section<section id="contact">
+</section>
+
+<section id="contact">
   <div class="section-eyebrow">Get In Touch</div>
   <div class="section-title">Let's talk about <em>your family's needs.</em></div>
   <p style="color:var(--text-mid); max-width:500px;">We offer a free confidential consultation to understand your situation and recommend the right level of support. Serving Southern New Hampshire &amp; Massachusetts.</p>
